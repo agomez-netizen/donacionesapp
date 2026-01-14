@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Donaciones AAPOS/OSSHP</title>
+    <meta
+      name="description"
+      content="Catálogo de donaciones solidarias: ropa, alimentos, higiene y útiles escolares."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <a
+    href="https://wa.me/50241433569?text=Hola%20buen%20día,%20me%20gustaría%20recibir%20información%20sobre%20cómo%20apoyar%20el%20proyecto."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Hola, quiero apoyar el proyecto de Transformación Digital del OSSHP."
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+<a href="#inicio" class="backtop-float" aria-label="Volver arriba">
+  ↑
+</a>
+
+  <body>
+    <!-- Header / Navbar -->
+    <header class="site-header">
+      <div class="container header-row">
+        <a
+          class="brand"
+          href="https://www.amigosproobras.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Ir al inicio"
+        >
+          <img
+            src="./assets/logo_aapos.png"
+            alt="Logo AAPOS"
+            class="brand-mark"
+          />
+          <span class="brand-name">Asociación Amigos Pro Obras Sociales</span>
+        </a>
+
+        <nav class="nav" id="mainNav">
+          <a class="nav-link" href="#inicio">Inicio</a>
+          <a class="nav-link" href="#como-donar">Cómo Donar</a>
+          <a class="nav-link" href="#contacto">Contacto</a>
+          <a
+            class="nav-link"
+            href="https://hermanopedrogt.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            OSSHP
+          </a>
+        </nav>
+
+        <a
+          href="https://hermanopedrogt.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="header-image-link"
+        >
+          <img src="assets/osshp.png" alt="" class="header-image" />
+        </a>
+
+        <a class="btn btn-primary" href="#donar" id="btnContribuir"
+          >Contribuir</a
+        >
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <main id="inicio">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <!--<img
+    src="assets/Logos.png"
+    alt="Asociación Amigos Pro Obras Sociales"
+    class="hero-top-image"
+  />-->
+
+            <h1 class="hero-title" id="heroTitle">
+              Sé parte de esta transformación
+            </h1>
+            <p class="hero-subtitle" id="heroSubtitle">
+              Descubre los productos que puedes aportar para digitalizar juntos
+              el
+              <!--<a
+                href="https://hermanopedrogt.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >-->
+                Hospital del Santo Hermano Pedro
+              </a>
+              en Antigua Guatemala
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="btn btn-success"
+                href="assets/docs/TransformacionDigital2025.pdf"
+                target="_blank"
+                rel="noopener"
+                download
+              >
+                Descargar Proyecto
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-video-wrap">
+           <!-- <video
+              id="heroVideo"
+              class="hero-video"
+              src="assets/digitalizacion.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="auto"
+            ></video> -->
+  <iframe
+    class="hero-video"
+    src="https://www.youtube.com/embed/HnNinlROr94?autoplay=1&mute=1&loop=1&playlist=HnNinlROr94&playsinline=1&rel=0&modestbranding=1"
+    title="Video institucional"
+    frameborder="0"
+    allow="autoplay; encrypted-media; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+
+           <!-- <button id="btnSound" class="video-sound-btn" type="button">
+              🔊 Activar sonido
+            </button>-->
+          </div>
+        </div>
+      </section>
+
+      <!-- Catálogo (categorías principales) -->
+      <section class="section" id="catalogo">
+        <div class="container">
+          <h2 class="section-title">
+            Catálogo de Productos para Apoyar el Proyecto
+          </h2>
+
+          <div class="grid cards" id="catalogGrid" class="grid cards">
+            <!-- Estas tarjetas se renderizan con JS desde Google Sheets -->
+            <article class="card skeleton">
+              <div class="card-media"></div>
+              <div class="card-body">
+                <div class="skeleton-line w60"></div>
+                <div class="skeleton-line w90"></div>
+              </div>
+            </article>
+            <article class="card skeleton">
+              <div class="card-media"></div>
+              <div class="card-body">
+                <div class="skeleton-line w60"></div>
+                <div class="skeleton-line w90"></div>
+              </div>
+            </article>
+            <article class="card skeleton">
+              <div class="card-media"></div>
+              <div class="card-body">
+                <div class="skeleton-line w60"></div>
+                <div class="skeleton-line w90"></div>
+              </div>
+            </article>
+            <article class="card skeleton">
+              <div class="card-media"></div>
+              <div class="card-body">
+                <div class="skeleton-line w60"></div>
+                <div class="skeleton-line w90"></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="pagination" id="pagination">
+  <button class="page-btn" id="btnPrev" type="button">← Anterior</button>
+  <span class="page-info" id="pageInfo">Pág. 1</span>
+  <button class="page-btn" id="btnNext" type="button">Siguiente →</button>
+</div>
+
+
+          <p class="note" role="note">
+            ✅ Tu apoyo permite que la tecnología mejore la atención, optimice
+            recursos y haga más humano el cuidado de cada paciente.
+          </p>
+        </div>
+      </section>
+
+      <!-- Sección: Cómo donar -->
+      <section class="section soft" id="como-donar">
+        <div class="container">
+          <h2 class="section-title">¿Cómo apoyar este proyecto?</h2>
+
+          <ol class="steps">
+            <li>Explora el catálogo y selecciona lo que deseas aportar</li>
+            <li>Déjanos tus datos y define tu aporte</li>
+            <li>Te contactaremos para coordinar todo fácilmente</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Formulario -->
+      <section class="section" id="donar">
+        <div class="container">
+          <h2 class="section-title">¿Quieres ayudar?</h2>
+          <p class="section-subtitle">Envía tu intención de donación.</p>
+
+          <form class="form" id="donationForm" autocomplete="on">
+            <div class="form-grid">
+              <label class="field">
+                <span class="field-label">Nombre</span>
+                <input
+                  name="nombreDonante"
+                  type="text"
+                  placeholder="Tu nombre"
+                  required
+                />
+              </label>
+
+              <label class="field">
+                <span class="field-label">Correo Electrónico</span>
+                <input
+                  name="contacto"
+                  type="email"
+                  placeholder="ejemplo@email.com"
+                  required
+                />
+              </label>
+
+              <label class="field">
+                <span class="field-label">Teléfono</span>
+                <input
+                  name="telefono"
+                  type="tel"
+                  placeholder="Ej: +502 2508 8423"
+                  required
+                />
+              </label>
+
+              <label class="field">
+                <span class="field-label">Ciudad</span>
+                <input
+                  name="ciudad"
+                  type="text"
+                  placeholder="Ej: Guatemala"
+                  required
+                />
+              </label>
+
+              <label class="field">
+                <span class="field-label">Producto (del catálogo)</span>
+                <select name="itemId" id="itemSelect" required>
+                  <option value="" selected disabled>Elige un producto…</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span class="field-label">Cantidad</span>
+                <input
+                  name="cantidad"
+                  type="number"
+                  min="1"
+                  step="1"
+                  value="1"
+                  required
+                />
+              </label>
+
+              <label class="field field-full">
+                <span class="field-label">Mensaje</span>
+                <textarea
+                  name="mensaje"
+                  rows="4"
+                  placeholder="Ej: Estoy interesado en donar una pantalla de 55' LG"
+                ></textarea>
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit" id="btnEnviar">
+                Enviar
+              </button>
+              <p class="form-status" id="formStatus" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section class="section soft" id="contacto">
+        <div class="container">
+          <h2 class="section-title">Contacto</h2>
+          <p class="section-subtitle">Conoce nuestras redes Sociales.</p>
+
+          <div class="social">
+            <a
+              class="pill"
+              href="https://www.facebook.com/amigosproobras/"
+              aria-label="Facebook"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a
+              class="pill"
+              href="https://www.instagram.com/amigosproobras/"
+              aria-label="Instagram"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              class="pill"
+              href="https://x.com/amigosproobras"
+              aria-label="X"
+              target="_blank"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a
+              class="pill"
+              href="https://www.youtube.com/channel/UCj4q4AHBSZS82xFcyQyJQzg"
+              aria-label="YouTube"
+              target="_blank"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <h4 class="footer-title">Asociación Amigos Pro Obras</h4>
+
+          <p class="footer-text">
+            <strong>Oficina Central</strong><br />
+            8 avenida 3-90, Zona 14 Edificio La Rambla,<br />
+            Torre II Segundo Nivel, Oficina 2-2
+          </p>
+
+          <p class="footer-text">
+            <strong>Oficina Antigua Guatemala</strong><br />
+            6ta. Calle Oriente #20, Antigua Guatemala.<br />
+            Interior Obras Sociales del Santo Hermano Pedro
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-text">
+            <strong>Email:</strong><br />
+            <a href="mailto:asociacion@amigosobras.com">
+              asociacion@amigosobras.org
+            </a>
+          </p>
+
+          <p class="footer-text">
+            <strong>Teléfono:</strong><br />
+            +502 2508-8423<br />
+            +502 2223-8300<br />
+            +502 7931-2100 ext. 180
+          </p>
+        </div>
+
+        <div class="footer-col footer-bottom">
+          <small>
+            © 2026 Asociación Amigos Pro Obras<br />Inge. Aníbal Morales<br />
+            Todos los derechos reservados.
+          </small>
+          <a class="backtop" href="#inicio">↑ Volver arriba</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
